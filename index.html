@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Srishti Ray | MahaRERA Certificate</title>
+
+  <style>
+    :root {
+      --navy: #12336b;
+      --gold: #e99a12;
+      --ivory: #faf8f2;
+      --white: #ffffff;
+      --text: #24334a;
+      --muted: #747b87;
+      --border: #ece5d8;
+    }
+
+    @font-face {
+        font-family:'Roboto-Medium.ttf';
+        src: url('./font/Roboto-Medium.ttf');
+    }
+
+        @font-face {
+        font-family:'Allura-Regular.ttf';
+        src: url('./font/Allura-Regular.ttf');
+    }
+
+
+
+    .mahrera, .subtitle, .certificate-label, .registration-number, .detail-label{
+                font-family:'Roboto-Medium.ttf';
+
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+              font-family:'Roboto-Medium.ttf';
+
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 28px 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--ivory);
+      color: var(--navy);
+    }
+
+    .page {
+      width: 100%;
+      max-width: 460px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 14px 45px rgba(18, 51, 107, 0.08);
+    }
+
+    .top-line {
+      height: 5px;
+      background: var(--gold);
+    }
+
+    .content {
+      padding: 34px 30px 30px;
+    }
+
+    .brand {
+      text-align: center;
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-name {
+        font-family:'Allura-Regular.ttf' !important;
+      font-size: 43px;
+      font-style: italic;
+      line-height: 1.2;
+      color: var(--navy);
+    }
+
+    .brand-role {
+      margin-top: 8px;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+              font-family:'Roboto-Medium.ttf';
+
+    }
+
+    .eyebrow {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      text-transform: uppercase;
+                    font-family:'Roboto-Medium.ttf';
+
+    }
+
+    h1 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.35;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .subtitle {
+      margin: 12px auto 25px;
+      max-width: 320px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .certificate {
+      padding: 22px 20px;
+      background: var(--ivory);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+    }
+
+    .certificate-label {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .registration-number {
+      margin-top: 10px;
+      font-size: 22px;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+      color: var(--navy);
+    }
+
+    .gold-divider {
+      width: 42px;
+      height: 3px;
+      margin: 18px 0;
+      background: var(--gold);
+      border: 0;
+    }
+
+    .detail {
+      padding: 12px 0;
+      border-bottom: 1px solid #e8e1d5;
+    }
+
+    .detail:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .detail-label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .detail-value {
+      font-size: 14px;
+      line-height: 1.6;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .validity {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px;
+      padding: 15px;
+      background: #fff9ec;
+      border: 1px solid #f3e3c2;
+      border-radius: 8px;
+    }
+
+    .validity-icon {
+      flex-shrink: 0;
+      color: var(--gold);
+      font-size: 23px;
+    }
+
+    .validity-title {
+      font-size: 13px;
+      color: var(--navy);
+    }
+
+    .validity-date {
+      margin-top: 6px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #626b78;
+    }
+
+    .download-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      margin-top: 24px;
+      padding: 16px 12px;
+      border: 0;
+      border-bottom: 3px solid #c27b00;
+      border-radius: 6px;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+      transition: background 0.2s ease;
+    }
+
+    .download-button:hover {
+      background: #1d477f;
+    }
+
+    .download-button svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .download-note {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .footer {
+      padding: 17px 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 11px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .footer strong {
+      color: var(--navy);
+    }
+
+    @media (max-width: 380px) {
+      .content {
+        padding: 28px 20px;
+      }
+
+      .brand-name {
+        font-size: 37px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .registration-number {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="top-line"></div>
+
+    <div class="content">
+
+      <header class="brand">
+        <div class="brand-name">Srishti Ray</div>
+        <div class="brand-role">MANAGING PARTNER</div>
+      </header>
+
+      <div class="eyebrow">Official Registration Details</div>
+
+      <h1 class="mahrera">MahaRERA Registration Certificate</h1>
+
+      <p class="subtitle">
+        View and download the real estate agent
+        registration certificate.
+      </p>
+
+      <section class="certificate">
+
+        <div class="certificate-label">
+          MahaRERA Registration Number
+        </div>
+
+        <div class="registration-number">
+          A031172603738
+        </div>
+
+        <hr class="gold-divider">
+
+        <div class="detail">
+          <span class="detail-label">Registered Agent</span>
+          <div class="detail-value">
+            VENDO BONAFIDE REALTY-SRISHTI UMESHCHANDRA RAY
+          </div>
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Type of Agent</span>
+          <div class="detail-value">Proprietor</div>
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Registered Location</span>
+          <div class="detail-value">
+            Mumbai City, Maharashtra – 400064
+          </div>
+        </div>
+
+        <div class="validity">
+          <div class="validity-icon">✓</div>
+
+          <div>
+            <div class="validity-title">
+              Registration Validity
+            </div>
+
+            <div class="validity-date">
+              From: 02 September 2026<br>
+              Until: 01 September 2031
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <a
+        href="./public/rera.pdf"
+        download="Srishti-Ray-MahaRERA-Certificate.pdf"
+        class="download-button"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <path d="m7 10 5 5 5-5"/>
+          <path d="M12 15V3"/>
+        </svg>
+
+        Download MahaRERA Certificate
+      </a>
+
+      <p class="download-note">
+        PDF document · Official registration certificate
+      </p>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
